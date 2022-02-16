@@ -1,0 +1,16 @@
+.title-text{
+    text-align: center;
+    color: #31A5AC;
+    margin-top: 37px;
+}
+.bg-color{
+    background-color: #F8F8F8;
+}
+
+.button-color{
+    background-color: #59A5FF;
+}
+.inputfield-color{
+    border: #31A5AC;
+    background-color: #DCDCDC;
+}
