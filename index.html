@@ -26,39 +26,52 @@
     </header>
 
     <main>
-        <section class="container d-flex">
-         <div class="col-lg-7 ">
+        <section class="container">
+            <div class="row">
+            
+            <div class="col-lg-7 col-sm-12">
             <img  src="john-mcarthur-ROQzKIAdY78-unsplash.jpg" class="img-fluid rounded" alt="money-picture">
          </div>
 
-         <div class="col-lg-5 ms-5 bg-color">
-            <form class="text-center">
+         <div class="col-lg-5 col-sm-12  bg-color">
+            <div class="text-center" >
                 <h5 class="pb-3">Income</h5>  
                 
                <span class=" pe-3">Income: </span>
-               <input id="email" class="  inputfield-color" type="text" >
+               <input id="income" class="  inputfield-color" type="text" >
                <p class="pt-3">Expenses</p>
                
                <span class="text-end pe-3">Food: </span>
-               <input id="email" class="mb-3  inputfield-color" type="text" ><br>
+               <input id="food" class="mb-3  inputfield-color" type="text" ><br>
 
                <span class="text-end pe-3">Rent: </span>
-               <input id="email" class="mb-3  inputfield-color" type="text" ><br>
+               <input id="rent" class="mb-3  inputfield-color" type="text" ><br>
 
                <span class="text-end  pe-2">Clothes: </span>
-               <input id="email" class="mb-3  inputfield-color" type="text" ><br>
+               <input id="cloth" class="mb-3  inputfield-color" type="text" ><br>
                 
-               <button id="login-button" class=" px-5 py-2 rounded button-color">Submit</button>
+               <button id="calculate-button" class=" px-5 py-2 rounded button-color">Submit</button>
             
-               <p>Total Expenses:</p>
-               <p>Balance:</p>
+               <p>Total Expenses:<span id="total-expenses">0</span></p>
+               <p>Balance:<span id="balance">0</span></p>
 
-               <p>Saving Amount:</p>
-               <p>Remaining Balance:</p>
-               <br><br>
+               
+               <span class="text-end  pe-2">Save: </span>
+               <input id="save" class="mb-3 w-25% inputfield-color" type="text" > 
+                <span class="text-end  pe-2">% </span>
+                <button id="save-button" class=" px-3 py-2 rounded button-color">Save</button>
+               
+                <p>Saving Amount:<span id="saving-amount">0</span></p>
+                <p>Remaining Balance:<span id="remaining-balance">0</span></p>
+                
+
+               
               
-              </form> 
+            </div> 
          </div>
+        </div>
+
+       
         </section>
     </main>
 
