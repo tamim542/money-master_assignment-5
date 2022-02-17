@@ -35,28 +35,30 @@
 
          <div class="col-lg-5 col-sm-12  bg-color">
             <div class="text-center" >
-                <h5 class="pb-3">Income</h5>  
-                
+                <h5 class="pb-3">Income</h5> 
+
+                <!------------------------error sms------------>
+
+                <p id="error-handle" class="error-case">❌ Please give positive integer value</p>
+           
+        
+                <!------------------------error sms------------>
+
                <span class=" pe-3">Income: </span>
-               <input id="income" class="  inputfield-color" type="text" >
+               <input id="income" class="  inputfield-color" type="number" >
                <p class="pt-3">Expenses</p>
                
                <span class="text-end pe-3">Food: </span>
-               <input id="food" class="mb-3  inputfield-color" type="text" ><br>
+               <input id="food" class="mb-3  inputfield-color" type="number" ><br>
 
                <span class="text-end pe-3">Rent: </span>
-               <input id="rent" class="mb-3  inputfield-color" type="text" ><br>
+               <input id="rent" class="mb-3  inputfield-color" type="number" ><br>
 
                <span class="text-end  pe-2">Clothes: </span>
-               <input id="cloth" class="mb-3  inputfield-color" type="text" ><br>
+               <input id="cloth" class="mb-3  inputfield-color" type="number" ><br>
                 
                <button id="calculate-button" class=" px-5 py-2 rounded button-color">Submit</button>
-            <!------------------------error sms------------>
-
-            <p id="error-handle" class="error-case">❌ Please give positive integer value</p>
-            <p id="notify-success" class="error-case">✅ Pin Matched... Secret door is opening for you</p>
-        
-            <!------------------------error sms------------>
+            
 
 
                <p>Total Expenses:<span id="total-expenses">0</span></p>
@@ -64,7 +66,7 @@
 
                
                <span class="text-end  pe-2">Save: </span>
-               <input id="save" class="mb-3 w-25% inputfield-color" type="text" > 
+               <input id="save" class="mb-3 w-25% inputfield-color" type="number" > 
                 <span class="text-end  pe-2">% </span>
                 <button id="save-button" class=" px-3 py-2 rounded button-color">Save</button>
                

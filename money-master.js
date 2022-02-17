@@ -21,9 +21,13 @@ function SavingExpenses(){
     const clothInputValue=clothInput.value;
     const clothInputValueInt=parseInt(clothInputValue);
 
-    if(typeof incomeInputValueInt==='string'){
-        console.log('string');
+    if( incomeInputValueInt<0 || foodInputValueInt<0 || rentInputValueInt<0 || clothInputValueInt<0 ){
+        console.log('string int');
+        const errorHandle=document.getElementById('error-handle');
+        errorHandle.style.display='block';
     }else{
+        const errorHandle=document.getElementById('error-handle');
+        errorHandle.style.display='none';
         // error handeling 1st part
 
         // Total Expenses
@@ -36,7 +40,7 @@ function SavingExpenses(){
         // Balance
 
     const balanceTk=document.getElementById('balance');
-    let balanceAmount = incomeInputValueInt - frcTotal;
+    var balanceAmount = incomeInputValueInt - frcTotal;
     balanceTk.innerText = balanceAmount;
 
     }

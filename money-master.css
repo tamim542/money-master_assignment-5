@@ -17,3 +17,7 @@
     border: #31A5AC;
     background-color: #DCDCDC;
 }
+
+.error-case{
+    display: none;
+}
