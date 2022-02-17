@@ -14,10 +14,13 @@
     background-color: #59A5FF;
 }
 .inputfield-color{
+   
     border: #31A5AC;
     background-color: #DCDCDC;
 }
-
+.input-width{
+    width: 100px;
+}
 .error-case{
     color: firebrick;
     display: none;
