@@ -19,5 +19,6 @@
 }
 
 .error-case{
+    color: firebrick;
     display: none;
 }
