@@ -21,6 +21,11 @@ function SavingExpenses(){
     const clothInputValue=clothInput.value;
     const clothInputValueInt=parseInt(clothInputValue);
 
+    if(typeof incomeInputValueInt==='string'){
+        console.log('string');
+    }else{
+        // error handeling 1st part
+
         // Total Expenses
 
     let frcTotal = foodInputValueInt + rentInputValueInt + clothInputValueInt;
@@ -31,9 +36,20 @@ function SavingExpenses(){
         // Balance
 
     const balanceTk=document.getElementById('balance');
-    const balanceAmount = incomeInputValueInt - frcTotal;
+    let balanceAmount = incomeInputValueInt - frcTotal;
     balanceTk.innerText = balanceAmount;
 
+    }
+  
+    /*    
+    if(balanceTk.innerText=='NaN' || totalExpenses.innerText =='NaN' ){
+        console.log('aabc');
+    }else{console.log('not');}
+    if(totalExpenses.innerText =='NaN' ){
+        console.log('aabssssssc');
+    }else{console.log('not2');}
+
+*/
 
 
      // Second part Saving Remaining Balance
@@ -51,6 +67,7 @@ function SavingExpenses(){
     savingTk.innerText=saveAmount;
 
       // Remaining Balance
+        console.log(balanceAmount);
 
       let remaningBalance = balanceAmount - saveAmount;
       const remaningBalanceShow=document.getElementById('remaining-balance');
