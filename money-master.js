@@ -25,7 +25,15 @@ function SavingExpenses(select1,select2){
        
         const errorHandle=document.getElementById('error-handle');
         errorHandle.style.display='block';
-    }else{
+    }
+  
+        else if(incomeInputValue=='' || foodInputValue=='' || rentInputValue=='' || clothInputValue==''){
+            console.log('what is');
+            const errorHandle=document.getElementById('error-handle');
+            errorHandle.style.display='block';
+        }
+    
+    else{
         const errorHandle=document.getElementById('error-handle');
         errorHandle.style.display='none';
         // error handeling 1st part
