@@ -45,20 +45,7 @@ function SavingExpenses(){
 
     }
   
-    /*    
-    if(balanceTk.innerText=='NaN' || totalExpenses.innerText =='NaN' ){
-        console.log('aabc');
-    }else{console.log('not');}
-    if(totalExpenses.innerText =='NaN' ){
-        console.log('aabssssssc');
-    }else{console.log('not2');}
-
-*/
-
-
-     // Second part Saving Remaining Balance
-
-     // Saving Amount
+   
 
     const saveMoney = document.getElementById('save');
     const saveMoneyValue=saveMoney.value;
